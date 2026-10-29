@@ -1,0 +1,8 @@
+{
+  "name": "demoflow",
+  "description": "Produce professional step-by-step explainer videos from real websites, web apps or desktop software: scene plan, voice-over, captions, Playwright recording, FFmpeg assembly and validation.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": { "name": "mohanmohan321" },
+  "keywords": ["video", "tutorial", "demo", "playwright", "ffmpeg", "tts", "captions"]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "demoflow-marketplace",
+  "owner": { "name": "mohanmohan321" },
+  "metadata": {
+    "description": "Claude Code plugins for producing narrated, captioned demo videos from real software.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "demoflow",
+      "source": "./plugins/demoflow",
+      "description": "Produce professional step-by-step explainer videos from real websites, web apps or desktop software: scene plan, voice-over, captions, Playwright recording, FFmpeg assembly and validation.",
+      "version": "1.0.0",
+      "author": { "name": "mohanmohan321" },
+      "category": "productivity",
+      "keywords": ["video", "tutorial", "demo", "playwright", "ffmpeg", "tts", "captions", "screen-recording"]
+    }
+  ]
+}

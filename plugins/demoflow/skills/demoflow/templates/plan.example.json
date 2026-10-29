@@ -1,0 +1,64 @@
+{
+  "title": "How to <do the task> in <product>",
+  "language": "en-US",
+  "basename": "demo",
+  "output_dir": "output",
+  "work_dir": "work",
+  "tts": {
+    "engine": "edge-tts",
+    "voice": "en-US-AriaNeural",
+    "rate": "+0%",
+    "pitch": "+0Hz",
+    "volume": "+0%",
+    "pronunciations": { "ExampleBrand": "Example Brand" }
+  },
+  "video": { "width": 1920, "height": 1080, "fps": 30, "crf": 18 },
+  "captions": { "burn_in": true, "formats": ["srt", "vtt"], "size": 46, "max_words": 8 },
+  "music": null,
+  "scenes": [
+    {
+      "id": "intro",
+      "title": "Introduction",
+      "label": "INTRO",
+      "purpose": "Say what the viewer will learn.",
+      "actions": "Intro card, then fade to the start page.",
+      "expected_state": "Start page loaded, signed in.",
+      "narration": "Welcome. In this short tutorial you will learn how to do the task.",
+      "assets": []
+    },
+    {
+      "id": "step-one",
+      "title": "First step",
+      "purpose": "Open the feature.",
+      "actions": "Click the 'Start' button.",
+      "expected_state": "The form is visible.",
+      "narration": "First, click Start to open the form."
+    },
+    {
+      "id": "submit",
+      "title": "Submit",
+      "purpose": "Run the action. Consequential: confirm with the user before the real run.",
+      "actions": "Click 'Submit'.",
+      "expected_state": "A progress indicator appears.",
+      "narration": "Then click Submit."
+    },
+    {
+      "id": "wait",
+      "title": "Processing",
+      "purpose": "Show waiting honestly, sped up.",
+      "actions": "Wait until the result is visible (poll, do not guess).",
+      "expected_state": "Result visible.",
+      "narration": "This can take a moment, so we have sped up the wait.",
+      "speed_up_to": 7
+    },
+    {
+      "id": "result",
+      "title": "The result",
+      "label": "DONE",
+      "purpose": "Show the verified end state.",
+      "actions": "Scroll the result into view.",
+      "expected_state": "Result displayed.",
+      "narration": "And here is the finished result."
+    }
+  ]
+}
